@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mi Pokedex</string>
+
+    <!-- Login View -->
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_confirm_password">Confirm Password</string>
+    <string name="login_sign_in">Sign In</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="login_reset_password">Reset my password</string>
+    <string name="login_sign_in_google">Sign In with Google</string>
+    <string name="login_forgot_password">I have forgotten my password</string>
+    <string name="login_create_account">Create a new account</string>
+    <string name="login_go_login">Go back to login</string>
+    <!-- Menu -->
+    <string name="menu_opciones">Menu</string>
+    <string name="menu_credits">Acerca de la app.</string>
+    <!-- Fragments -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Layouts -->
+    <string name="pokemon_default_name">Pokemon Name</string>
+    <!-- Shared Preferences -->
+    <string name="PREFERENCE_FILE_KEY">UDID_KEY</string>
+</resources>

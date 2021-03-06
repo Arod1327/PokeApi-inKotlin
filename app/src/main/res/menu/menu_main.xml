@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mykotlinpokedex.Activities.MainActivity">
+    <item android:id="@+id/action_tasknew" android:title="@string/menu_opciones" app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Salir"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_forget_logout"
+        android:title="Salir y Olvidar"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_about" android:title="@string/menu_credits"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_vieww"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:foreground="?selectableItemBackground">
+        <LinearLayout
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagePokemon"
+                android:scaleType="fitXY"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/pokebola"/>
+            <TextView
+                android:id="@+id/NamePokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:text="@string/pokemon_default_name"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#EDF1F1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:capitalize="characters" app:fontFamily="monospace"
+                android:background="@color/colorAccentDark"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
