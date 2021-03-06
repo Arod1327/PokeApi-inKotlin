@@ -1,7 +1,7 @@
 # PokeApi-inKotlin
 List of pokemons from pokedex. PokeAPI was used in this project.
 
-Requerimientos
+Requirements
 * Android Studio IDE
 
 Getting Started
