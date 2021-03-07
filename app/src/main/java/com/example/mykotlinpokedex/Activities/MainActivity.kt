@@ -1,18 +1,16 @@
 package com.example.mykotlinpokedex.Activities
 
 import android.content.*
+import android.graphics.Color
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.example.mykotlinpokedex.*
 import com.example.mykotlinpokedex.Fragments.PokemonDetail
-import com.example.mykotlinpokedex.R
 import com.example.mykotlinpokedex.Utils.Util
-import com.example.mykotlinpokedex.goToActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -58,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         //Register Broadcast
         LocalBroadcastManager.getInstance(this)
             .registerReceiver(showDetail, IntentFilter(Util.KEY_ENABLE_HOME))
-
+        //Delete Shared Preferences of user
         preferences= getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
 
         BtnLogOut = findViewById<Button>(R.id.btnlogout)
@@ -87,7 +85,6 @@ class MainActivity : AppCompatActivity() {
                 supportActionBar!!.setDisplayShowHomeEnabled(false)
                 supportActionBar!!.setDisplayHomeAsUpEnabled(false)
             }
-
         }
         return true
     }

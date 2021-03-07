@@ -71,8 +71,8 @@ class PokemonDetail : Fragment() {
         Glide.with(activity!!).load(pokemon!!.pokemonURL).into(pokemon_img)
 
         pokemon_name.text = pokemon.pokemonName
-        pokemon_height.text = "Height: "+ pokemon.pokemonHeight
-        pokemon_weight.text = "Weight: "+pokemon.pokemonWeight
+        pokemon_height.text = "Height: "+ pokemon.pokemonHeight +" m"
+        pokemon_weight.text = "Weight: "+pokemon.pokemonWeight +" kg"
         pokemon_type.text = "Type: "+pokemon.pokemonType
     }
 
